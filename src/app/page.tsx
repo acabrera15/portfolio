@@ -1,9 +1,11 @@
-import Header from "./component/header"
+import Header from "./component/header";
+import SocialLinks from "./component/social-links";
 
 export default function Home() {
   return (
-    <div>
-    <Header />
+    <div className="relative min-h-screen">
+      <Header />
+      <SocialLinks />
     </div>
   );
 }
