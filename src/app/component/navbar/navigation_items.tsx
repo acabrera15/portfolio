@@ -30,6 +30,7 @@ export const NavigationItems: React.FC<NavigationItemsProps> = ({
       {links.map((item, index) => {
         return (
           <Link
+            key={`${index}-nav-link`}
             href={item.link}
             style={{
               width: `${CONTAINER_DIAMETER - 100 * index}px`,

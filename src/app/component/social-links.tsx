@@ -11,9 +11,12 @@ const SocialLinks = () => {
   ];
   return (
     <div className="flex flex-col items-center gap-4 fixed bottom-0 left-6">
-      {links.map((item) => {
+      {links.map((item, index) => {
         return (
-          <button className="hover:cursor-pointer hover:text-amber-500">
+          <button
+            key={`${index}-social-link`}
+            className="hover:cursor-pointer hover:text-amber-500"
+          >
             {item.icon}
           </button>
         );

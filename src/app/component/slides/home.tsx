@@ -3,11 +3,16 @@ import Link from "next/link";
 const HomeSlide = () => {
   return (
     <div className="relative mx-auto px-20 max-w-[1000px] h-screen">
-      <div className="absolute bottom-[30%]">
+      <div className="absolute bottom-[30%] flex flex-col gap-5">
         <h1>Hello! I am Andrew and I am a Full Stack Developer!</h1>
 
         {/* TODO: add a subtext */}
-        <div></div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          labore voluptates quidem nostrum aliquam ex exercitationem eveniet
+          similique? Porro odit saepe molestias dolor provident earum veniam
+          libero animi assumenda itaque!
+        </div>
 
         {/* TODO: add desciption */}
         <p>
