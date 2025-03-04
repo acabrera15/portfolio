@@ -1,3 +1,4 @@
+import { Button } from "flowbite-react";
 import Link from "next/link";
 
 const HomeSlide = () => {
@@ -32,6 +33,7 @@ const HomeSlide = () => {
           voluptatem inventore.
         </p>
         {/* Contact Button */}
+        <Button color="purple"> Me</Button>
         <Link
           href={"mailto:andrewdcabrera@gmail.com"}
           className="rounded-lg border w-fit h-fit px-4 py-1 hover:opacity-75"

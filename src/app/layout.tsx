@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import { Flowbite, theme } from "flowbite-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +29,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Flowbite theme={{ theme }}>
+          {children}
+        </Flowbite>
         <Script
           src="https://kit.fontawesome.com/c9fa9d943f.js"
           crossOrigin="anonymous"
