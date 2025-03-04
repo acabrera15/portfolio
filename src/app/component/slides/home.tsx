@@ -7,12 +7,12 @@ const HomeSlide = () => {
         <h1>Hello! I am Andrew and I am a Full Stack Developer!</h1>
 
         {/* TODO: add a subtext */}
-        <div>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
           labore voluptates quidem nostrum aliquam ex exercitationem eveniet
           similique? Porro odit saepe molestias dolor provident earum veniam
           libero animi assumenda itaque!
-        </div>
+        </p>
 
         {/* TODO: add desciption */}
         <p>

@@ -14,19 +14,16 @@ export const Burger: React.FC = () => {
         onClick={() => setClicked(!clicked)}
       >
         <div
-          className={` w-6 h-1 bg-black rounded-xl transition-transform  duration-300 group-hover:translate-x-1 ${
-            clicked ? "translate-y-2 rotate-45" : ""
-          }`}
+          className={`w-6 h-1 bg-black dark:bg-white rounded-xl transition-transform duration-300 group-hover:translate-x-1 ${clicked ? "translate-y-2 rotate-45" : ""
+            }`}
         ></div>
         <div
-          className={`w-6 h-1 bg-black rounded-xl transition-opacity duration-300 group-hover:-translate-x-1 ${
-            clicked ? "opacity-0" : ""
-          }`}
+          className={`w-6 h-1 bg-black dark:bg-white rounded-xl transition-opacity duration-300 group-hover:-translate-x-1 ${clicked ? "opacity-0" : ""
+            }`}
         ></div>
         <div
-          className={`w-6 h-1 bg-black rounded-xl transition-transform duration-300 group-hover:translate-x-1 ${
-            clicked ? "-translate-y-2 -rotate-45" : ""
-          }`}
+          className={`w-6 h-1 bg-black dark:bg-white rounded-xl transition-transform duration-300 group-hover:translate-x-1 ${clicked ? "-translate-y-2 -rotate-45" : ""
+            }`}
         ></div>
       </button>
       {/* Nav Items */}

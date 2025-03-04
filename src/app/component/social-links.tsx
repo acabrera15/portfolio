@@ -10,7 +10,7 @@ const SocialLinks = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center gap-4 fixed bottom-0 left-6">
+    <div className="text-black dark:text-white flex flex-col items-center gap-4 fixed bottom-0 left-6">
       {links.map((item, index) => {
         return (
           <button
@@ -22,7 +22,7 @@ const SocialLinks = () => {
         );
       })}
 
-      <div className="w-[2px] bg-black h-[100px]"></div>
+      <div className="w-[2px] bg-black dark:bg-white h-[100px]"></div>
     </div>
   );
 };
