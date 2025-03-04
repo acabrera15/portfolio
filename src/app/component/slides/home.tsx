@@ -1,7 +1,11 @@
+'use client'
+
 import { Button } from "flowbite-react";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const HomeSlide = () => {
+  const router = useRouter();
+
   return (
     <div className="relative mx-auto px-20 max-w-[1000px] h-screen">
       <div className="absolute bottom-[30%] flex flex-col gap-5">
@@ -22,7 +26,7 @@ const HomeSlide = () => {
           sed quas expedita ad deserunt voluptatem fugit eum quam dolorum
           repudiandae error? Autem, facere incidunt! Debitis suscipit animi
           aspernatur vero quae non minima autem impedit quasi maxime, vel
-          repellendus necessitatibus neque rerum? Harum impedit velit et est
+          repellendus necessitatibus neque rerum? Harum impedit velit et eggst
           totam adipisci, iure expedita itaque. Fugit quod enim delectus! Culpa
           molestias iure nisi itaque officiis voluptas, atque animi facere
           praesentium sequi nihil doloribus vel fugit nobis perspiciatis nostrum
@@ -33,13 +37,13 @@ const HomeSlide = () => {
           voluptatem inventore.
         </p>
         {/* Contact Button */}
-        <Button color="purple"> Me</Button>
-        <Link
-          href={"mailto:andrewdcabrera@gmail.com"}
-          className="rounded-lg border w-fit h-fit px-4 py-1 hover:opacity-75"
-        >
-          Email Me
-        </Link>
+        <Button
+          color="purple"
+          className="w-fit"
+          onClick={() => {
+            router.push('mailto:andrewdcabrera@gmail.com')
+          }}
+        >Email Me</Button>
       </div>
     </div>
   );

@@ -1,10 +1,11 @@
+import { Avatar } from "flowbite-react";
 import { Burger } from "./navbar/burger";
 
 const Header = () => {
   return (
     <div className="h-[50] flex items-center justify-between w-full px-6">
       {/* avatar */}
-      <div className="rounded-full h-12 w-12 bg-black dark:bg-white"></div>
+      <Avatar className="w-10 h-10" img={'/andrew_avatar.webp'} alt="andrew" rounded />
 
       <div className="flex gap-10 items-center">
         {/* resume link */}
